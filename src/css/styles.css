@@ -8,7 +8,7 @@ body {
   display: block;
   margin: 0 auto;
   border-radius: 75px;
-  width: 50%;
+  width: 30%;
   padding: 30px;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 .form-signin .checkbox {
   font-weight: 400;
-  font-family:  'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .form-signin .form-control {
   position: relative;
@@ -61,13 +61,14 @@ body {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  font-family:  'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  font-family:  'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -86,14 +87,14 @@ body {
       }
 
       body {
-        background-color: #FF2A5B;
+        background: linear-gradient(#FF2A5B, #FF5F1D);
       }
 
       main {
         background-color: white;
         border-radius: 30px;
         box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-        font-family: 'Rock Salt', cursive;
+        font-family: 'Unica One', cursive;
         border:1px solid #BE1349;
 
       }
@@ -104,6 +105,7 @@ body {
         transition: all 200ms ease-in-out;
         border: 1px solid #FF2A5B;
         box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+        font-size: 25px;
            }
 
 .w-100:hover {
@@ -113,9 +115,14 @@ body {
 
 .mb-4 {
   border-radius: 20px;
-  box-shadow: 5px 5px 5px rgba(0,0,0, .3)
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  width: 50%;
 }
 
 .mt-5 {
-  font-family:  'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.h3  {
+font-size: 30px;
 }
