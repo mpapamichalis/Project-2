@@ -1,29 +1,5 @@
-body {
-  background-color: white;
-}
 
-
-
-.blood-logo {
-  display: block;
-  margin: 0 auto;
-  border-radius: 75px;
-  width: 30%;
-  padding: 30px;
-}
-
-.menu, .footer {
-  background-color: #FF2A5B;
-  color: white;
-  padding: 20px;
-  line-height: 30px;
-  position: fixed;
-
-}
-
-/* login */
-
-
+/* login page */
 html,
 body {
   height: 100%;
@@ -72,41 +48,40 @@ body {
 
 }
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
 
-      body {
-        background: linear-gradient(#FF2A5B, #FF5F1D);
-      }
+body {
+  background: linear-gradient(#FF2A5B, #FF5F1D);
+}
 
-      main {
-        background-color: white;
-        border-radius: 30px;
-        box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-        font-family: 'Unica One', cursive;
-        border:1px solid #BE1349;
+main {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+  font-family: 'Unica One', cursive;
+  border:1px solid #BE1349;
+}
 
-      }
-
- .w-100  {
-        background-color: #FF2A5B;
-        color: white;
-        transition: all 200ms ease-in-out;
-        border: 1px solid #FF2A5B;
-        box-shadow: 5px 5px 5px rgba(0,0,0, .3);
-        font-size: 25px;
-           }
+.w-100  {
+  background-color: #FF2A5B;
+  color: white;
+  transition: all 200ms ease-in-out;
+  border: 1px solid #FF2A5B;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  font-size: 25px;
+}
 
 .w-100:hover {
   background-color: white;
@@ -124,5 +99,93 @@ body {
 }
 
 .h3  {
-font-size: 30px;
+  font-size: 36px;
+}
+
+/* main page */
+
+body {
+  background: linear-gradient(#FF2A5B, #FF5F1D);
+}
+
+.btn-main {
+
+  background-color: #FF2A5B;
+  color: white;
+  font-family: 'Unica One', cursive;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #FF2A5B;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  transition: all 200ms ease-in-out;
+}
+
+.btn-main:hover {
+  background-color: white;
+  color: #FF2A5B;
+  cursor: pointer;
+}
+
+
+
+.page-header {
+  position: fixed;
+  background-color: white;
+  color: #FF2A5B;
+  padding: 20px;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  font-family: 'Unica One', cursive;
+}
+
+.navbar-brand {
+  font-size: 36px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #BE1349;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  font-family: 'Unica One', cursive;
+  color: black;
+  opacity: 100%;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+.header-icon {
+  border-radius: 10px;
+}
+
+
+
+.page-footer {
+  position: fixed;
+  background-color: white;
+  color: darkgray;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.favicon {
+  border-radius: 30px;
+}
+
+.card-image {
+  border-radius: 30px 30px 0 0;
+  opacity: 80%;
 }
