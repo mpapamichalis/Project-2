@@ -19,10 +19,12 @@ body {
   padding: 15px;
   margin: auto;
 }
+
 .form-signin .checkbox {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
 }
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
@@ -30,22 +32,23 @@ body {
   padding: 10px;
   font-size: 16px;
 }
+
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  font-family: 'Roboto', sans-serif;
-  
+  font-family: 'Roboto', sans-serif; 
 }
+
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   font-family: 'Roboto', sans-serif;
-
 }
 
 .bd-placeholder-img {
@@ -74,16 +77,18 @@ main {
   border:1px solid #BE1349;
 }
 
-.w-100  {
+.sub-btn  {
   background-color: #FF2A5B;
   color: white;
   transition: all 200ms ease-in-out;
   border: 1px solid #FF2A5B;
   box-shadow: 5px 5px 5px rgba(0,0,0, .3);
   font-size: 25px;
+  padding: 10px 100px;
+  border-radius: 10px;
 }
 
-.w-100:hover {
+.sub-btn:hover {
   background-color: white;
   color: #FF2A5B
 }
@@ -116,8 +121,7 @@ h5 {
   width: 100%;
 }
 
-.btn-main {
-
+.btn-donor {
   background-color: #FF2A5B;
   color: white;
   font-family: 'Unica One', cursive;
@@ -132,13 +136,54 @@ h5 {
   transition: all 200ms ease-in-out;
 }
 
-.btn-main:hover {
+.btn-donor:hover {
+  background-color: white;
+  color: #FF2A5B;
+  cursor: pointer;
+}
+
+.btn-patient {
+  background-color: #FF2A5B;
+  color: white;
+  font-family: 'Unica One', cursive;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #FF2A5B;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  transition: all 200ms ease-in-out;
+}
+
+.btn-patient:hover {
   background-color: white;
   color: #FF2A5B;
   cursor: pointer;
 }
 
 
+.btn-bank {
+  background-color: #FF2A5B;
+  color: white;
+  font-family: 'Unica One', cursive;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #FF2A5B;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  transition: all 200ms ease-in-out;
+}
+
+.btn-bank:hover {
+  background-color: white;
+  color: #FF2A5B;
+  cursor: pointer;
+}
 
 .page-header {
   position: fixed;
@@ -175,8 +220,6 @@ h5 {
   border-radius: 10px;
 }
 
-
-
 .page-footer {
   position: fixed;
   background-color: white;
@@ -195,5 +238,4 @@ h5 {
 
 .card-image {
   border-radius: 30px 30px 0 0;
-  
 }
