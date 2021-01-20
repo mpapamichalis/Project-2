@@ -35,7 +35,7 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
-
+  // get all route
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
