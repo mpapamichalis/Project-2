@@ -121,11 +121,11 @@ h5 {
   width: 100%;
 }
 
-.btn-donor {
+.btn-d-add {
   background-color: #FF2A5B;
   color: white;
   font-family: 'Unica One', cursive;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-align: center;
   border-radius: 10px;
   display: block;
@@ -136,17 +136,17 @@ h5 {
   transition: all 200ms ease-in-out;
 }
 
-.btn-donor:hover {
+.btn-d-add:hover {
   background-color: white;
   color: #FF2A5B;
   cursor: pointer;
 }
 
-.btn-patient {
+.btn-d-view {
   background-color: #FF2A5B;
   color: white;
   font-family: 'Unica One', cursive;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-align: center;
   border-radius: 10px;
   display: block;
@@ -157,14 +157,14 @@ h5 {
   transition: all 200ms ease-in-out;
 }
 
-.btn-patient:hover {
+.btn-d-view:hover {
   background-color: white;
   color: #FF2A5B;
   cursor: pointer;
 }
 
 
-.btn-bank {
+.btn-p-add {
   background-color: #FF2A5B;
   color: white;
   font-family: 'Unica One', cursive;
@@ -179,7 +179,29 @@ h5 {
   transition: all 200ms ease-in-out;
 }
 
-.btn-bank:hover {
+.btn-p-add:hover {
+  background-color: white;
+  color: #FF2A5B;
+  cursor: pointer;
+}
+
+
+.btn-p-view {
+  background-color: #FF2A5B;
+  color: white;
+  font-family: 'Unica One', cursive;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #FF2A5B;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  transition: all 200ms ease-in-out;
+}
+
+.btn-p-view:hover {
   background-color: white;
   color: #FF2A5B;
   cursor: pointer;
