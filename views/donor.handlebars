@@ -1,23 +1,27 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Bloodtype</th>
-      <th scope="col">Can Donate</th>
-    </tr>
-  </thead>
-  <tbody>
-      {{#each donors}}
-      {{#if this.canDonate}}
-    <tr>
-      <th scope="row">{{this.id}}</th>
-      <td>{{this.donorName}}</td>
-      <td>{{this.bloodType}}</td>
-      <td>Yes</td>
-    </tr>
-    {{/if}}
-    {{/each}}
-  </tbody>
-</table>
 
+<table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Blood Type</th>
+                    <th scope="col">Can Donate</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each donors}}
+                {{#if this.canDonate}}
+                <tr>
+                    <th scope="row">{{this.id}}</th>
+                        <td>{{this.donorName}}</td>
+                        <td>{{this.bloodType}}</td>
+                        <td>Yes</td>
+                </tr>
+                {{/if}}
+                {{/each}}
+          
+              
+            </tbody>
+        </table>
+
+        <button class="btn-add-donor" type="submit">ADD NEW</button>
