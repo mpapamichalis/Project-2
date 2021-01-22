@@ -1,8 +1,9 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const Donor = require("../models/donor");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -35,7 +36,7 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
-  // get all route
+  
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
@@ -49,5 +50,45 @@ module.exports = function(app) {
         id: req.user.id
       });
     }
+  });
+  //Donor get all route
+  app.get("/api/donor_data", (req, res) => {
+    Donor.findAll({}).then((results) => {
+      res.json(results);
+    });
+  });
+  //Patient get all route
+  app.get("/api/donor_data", (req,res) => {
+    Patient.findAll({}).then((results) => {
+      res.json(results);
+    });
+  });
+  //New Donor
+  app.post("/api/newDonor", (req) => {
+    console.log("Donor Data:");
+    console.log(req.body);
+
+    Donor.create({
+      donorName: req.body.donorName,
+      bloodType: req.body.bloodType,
+      canDonate: req.body.canDonate
+    // eslint-disable-next-line no-unused-vars
+    }).then((results) => {
+      res.end();
+    });
+  });
+  //New Patient
+  app.post("/api/newPatient", (req) => {
+    console.log("Patient Data:");
+    console.log(req.body);
+
+    Donor.create({
+      patientName: req.body.patientName,
+      bloodtype: req.body.bloodtype,
+      patientCon: req.body.patientCon
+    // eslint-disable-next-line no-unused-vars
+    }).then((results) => {
+      res.end();
+    });
   });
 };
