@@ -37,11 +37,14 @@ module.exports = function(app) {
     });
   });
   app.get("/patients", (req, res) => {
-    db.Patient.findAll().then(data =>{
+    db.Patient.findAll({raw: true}).then(data =>{
       console.log(data);
       res.render("patient",{
-        donors: data
+        patients: data
       });
     });
   });
+  // app.get("/blood", (req, res) => {
+  
+  // });
 };

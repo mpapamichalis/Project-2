@@ -10,7 +10,7 @@ module.exports = function (sequelize, DataTypes) {
     },
     patientCon: {
       type: DataTypes.STRING,
-      default: true
+      
       // eslint-disable-next-line indent
       }
   });
