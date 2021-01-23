@@ -164,7 +164,7 @@ h5 {
 }
 
 
-.btn-bank {
+.btn-blood {
   background-color: #FF2A5B;
   color: white;
   font-family: 'Unica One', cursive;
@@ -179,7 +179,7 @@ h5 {
   transition: all 200ms ease-in-out;
 }
 
-.btn-bank:hover {
+.btn-blood:hover {
   background-color: white;
   color: #FF2A5B;
   cursor: pointer;
@@ -239,3 +239,47 @@ h5 {
 .card-image {
   border-radius: 30px 30px 0 0;
 }
+
+
+/* donor table */
+
+td {
+  border-radius: 20px;
+}
+
+.table {
+  background-color: white;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #BE1349;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+}
+
+.thead-dark {
+  font-family: 'Unica One', cursive;
+  font-size: 20px;
+  border-radius: 20px;
+
+}
+
+.btn-add-donor {
+  background-color: white;
+  color: #FF2A5B;
+  font-family: 'Unica One', cursive;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #FF2A5B;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  transition: all 200ms ease-in-out;
+}
+
+.btn-add-donor:hover {
+  background-color: #FF2A5B;
+  color: white;
+  cursor: pointer;
+}
+

@@ -24,6 +24,30 @@
     <link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-		{{{ body }}}
-	</body>
-</html>
+        <div class="container">
+
+
+<table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Blood Type</th>
+                    <th scope="col">Can Donate</th>
+                </tr>
+            </thead>
+            <tbody>
+             
+                <tr>
+                    <th scope="row">{{this.id}}</th>
+                        <td>{{this.donorName}}</td>
+                        <td>{{this.bloodType}}</td>
+                        <td>Yes</td>
+                </tr>
+            
+          
+              
+            </tbody>
+        </table>
+
+        <button class="btn-add-donor" type="submit">+</button>
