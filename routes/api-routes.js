@@ -1,7 +1,6 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
-const Donor = require("../models/donor");
 
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -53,13 +52,13 @@ module.exports = function (app) {
   });
   //Donor get all route
   app.get("/api/donor_data", (req, res) => {
-    Donor.findAll({}).then((results) => {
+    db.Donor.findAll({}).then((results) => {
       res.json(results);
     });
   });
   //Patient get all route
-  app.get("/api/donor_data", (req,res) => {
-    Patient.findAll({}).then((results) => {
+  app.get("/api/patient_data", (req,res) => {
+    db.Patient.findAll({}).then((results) => {
       res.json(results);
     });
   });
@@ -68,7 +67,7 @@ module.exports = function (app) {
     console.log("Donor Data:");
     console.log(req.body);
 
-    Donor.create({
+    db.Donor.create({
       donorName: req.body.donorName,
       bloodType: req.body.bloodType,
       canDonate: req.body.canDonate
@@ -82,9 +81,9 @@ module.exports = function (app) {
     console.log("Patient Data:");
     console.log(req.body);
 
-    Donor.create({
+    db.Patient.create({
       patientName: req.body.patientName,
-      bloodtype: req.body.bloodtype,
+      bloodType: req.body.bloodType,
       patientCon: req.body.patientCon
     // eslint-disable-next-line no-unused-vars
     }).then((results) => {
