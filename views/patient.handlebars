@@ -4,23 +4,21 @@
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
                     <th scope="col">Blood Type</th>
-                    <th scope="col">Can Donate</th>
+                    <th scope="col">condition</th>
                 </tr>
             </thead>
             <tbody>
-                {{#each donors}}
-                {{#if this.canDonate}}
+                {{#each patients}}
                 <tr>
                     <th scope="row">{{this.id}}</th>
-                        <td>{{this.donorName}}</td>
+                        <td>{{this.patientName}}</td>
                         <td>{{this.bloodType}}</td>
-                        <td>Yes</td>
+                        <td>{{this.patientCon}}</td>
                 </tr>
-                {{/if}}
                 {{/each}}
           
               
             </tbody>
         </table>
 
-        <button class="btn-add-donor" type="submit"><strong>+</strong></button>
+        <button class="btn-add-donor" id="patadd-btn" type="submit"><strong>+</strong></button>
