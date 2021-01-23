@@ -21,9 +21,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Unica+One&display=swap" rel="stylesheet">  
 
       <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="/public/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-		{{{ body }}}
+        <div class="container">
+
+
+<table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Blood Type</th>
+                    <th scope="col">Can Donate</th>
+                </tr>
+            </thead>
+            <tbody>
+             
+                <tr>
+                    <th scope="row">{{this.id}}</th>
+                        <td>{{this.donorName}}</td>
+                        <td>{{this.bloodType}}</td>
+                        <td>Yes</td>
+                </tr>
+            
+          
+              
+            </tbody>
+        </table>
+
+        <button class="btn-add-donor" type="submit">+</button>
+
+
+
+
+
+        </div>
 	</body>
 </html>
