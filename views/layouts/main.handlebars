@@ -24,6 +24,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
+
+  {{!-- font awesome link --}}
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,11 +35,12 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
           <img class="header-icon"  src="images/blood-logo2 favicon.png" alt="blood-logo-favicon" width="50">
-          BloodLines
-        </a>
-        <a href="/donors">Donors</a> |
-        <a href="/patients">patients</a> |
-        <a href="/blood">Blood search</a>
+          BloodLines</a>   
+          {{!-- logout button --}}
+          <button class="sign-out" id="close-image"><img src="https://www.pinclipart.com/picdir/big/182-1821638_logout-icon-png-red-clipart.png"></button>
+        
+
+      
       </div>
     </nav>
   </div>
