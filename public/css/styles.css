@@ -224,12 +224,6 @@ h5 {
 }
 
 
-
-
-
-
-
-
 .page-header {
   position: fixed;
   background-color: white;
@@ -313,12 +307,12 @@ td {
   background-color: white;
   color: #FF2A5B;
   font-family: 'Unica One', cursive;
-  padding: 10px 30px;
+  padding: 5px 20px;
   text-align: center;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 30px;
   border: 1px solid #FF2A5B;
   box-shadow: 5px 5px 5px rgba(0,0,0, .3);
   transition: all 200ms ease-in-out;
@@ -350,6 +344,37 @@ td {
   cursor: pointer;
 
 }
+
+.sign-out {
+  display: inline-block;
+  height: 45px;
+  padding: 0;
+  margin: 10px;
+  vertical-align: top;
+  width: 50px;
+  border: 1px solid #BE1349;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  transition: all 200ms ease-in-out;
+}
+
+.sign-out:hover {
+  background-color: #FF2A5B;
+
+}
+
+
+
+#close-image img {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin:0 auto;
+
+}
+
+
 
 
 
