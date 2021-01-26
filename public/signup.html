@@ -44,12 +44,6 @@
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
 
-
-
-
-
-
-
 </head>
 ​
 <body>
@@ -71,17 +65,27 @@
   <form>
     <img class="mb-4" src="images/blood-logo2 copy.png" alt="logo-2" width="200" >
     <h1 class="h3 mb-3 fw-normal">BloodLines</h1>
-    <label for="inputEmail" class="visually-hidden">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="visually-hidden">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <label for="exampleInputEmail">Email address</label>
+    <input type="email" class="form-control" placeholder="Email address" id="email-input" placeholder="E-Mail" required autofocus>
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" id="password-input" class="form-control" placeholder="Password">
+      <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
     <div class="checkbox mb-3">
     
     </div>
     <button class="sub-btn" type="submit">Sign Up</button>
     <p class="mt-5 mb-3 text-muted"> Team Blue &copy; 2021</p>
   </form>
-</main>
+     <br />
+        <p>Or log in <a href="/login">here</a></p>
+
+
+
+
+<!-- </main> -->
 
         <!-- <form class="signup">
           <div class="form-group">
@@ -97,12 +101,12 @@
             <span class="sr-only">Error:</span> <span class="msg"></span>
           </div>
           <button type="submit" class="btn btn-default">Sign Up</button>
-        </form> -->
+        </form>
         <br />
         <p>Or log in <a href="/login">here</a></p>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <!-- <main class="form-signin">
   <form>
