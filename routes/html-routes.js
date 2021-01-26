@@ -29,7 +29,6 @@ module.exports = function(app) {
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, (req, res) => {
     //res.render("home");
-
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
   app.get("/donors", isAuthenticated, (req, res) => {
@@ -48,7 +47,12 @@ module.exports = function(app) {
       });
     });
   });
-  // app.get("/blood", (req, res) => {
-  
-  // });
+  app.get("/blood", isAuthenticated, (req, res) => {
+    db.Blood.findAll({raw: true}).then(data =>{
+      console.log(data);
+      res.render("blood",{
+
+      });
+    }); 
+  });
 };
