@@ -1,39 +1,64 @@
 <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Blood Type</th>
-                    <th scope="col">condition</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{#each patients}}
-                <tr>
-                    <th scope="row">{{this.id}}</th>
-                        <td>{{this.patientName}}</td>
-                        <td>{{this.bloodType}}</td>
-                        <td>{{this.patientCon}}</td>
-                </tr>
-                {{/each}}
-          
-              
-            </tbody>
-        </table>
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Blood Type</th>
+            <th scope="col">condition</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each patients}}
+        <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.patientName}}</td>
+            <td>{{this.bloodType}}</td>
+            <td>{{this.patientCon}}</td>
+        </tr>
+        {{/each}}
 
-        <button class="btn-add-donor" id="patadd-btn" type="submit"><strong>+</strong></button>
-      
 
-          
-        <button class="d-circle" type="submit"> 
-        <a class="d-link" href="/donors">donors
-        </a></button>
-        
-        <button class="p-circle" type="submit"> 
-        <a class="p-link" href="/patients">patients
-        </a></button>
-       
-        <button class="b-circle" type="submit"> 
-        <a class="b-link" href="/blood">blood</a>
-        </button>
-       
+    </tbody>
+</table>
+
+<button class="btn-add-donor" id="patadd-btn" data-toggle="modal" data-target="#newPatient" type="submit"><strong>+</strong></button>
+
+{{!-- modal --}}
+<div class="modal fade" id="newPatient" tabindex="-1" role="dialog" aria-labelledby="donorModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="patientModalCenterTitle">New Patient</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="patientName" class="col-form-label">Patient Name</label>
+                <input type="text" class="form-control" id="patientName">
+            </div>
+            <div class="form-group">
+                <label for="patbloodType">BloodType</label>
+                <select class="form-control" id="patbloodType">
+                    <option>O -</option>
+                    <option>O +</option>
+                    <option>A -</option>
+                    <option>A +</option>
+                    <option>B -</option>
+                    <option>B +</option>
+                    <option>AB -</option>
+                    <option>AB +</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patientCon" class="col-form-label">Patient Conditions</label>
+                <input type="text" class="form-conrol" id="patientCon">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="newPatientbtn">Add Donor</button>
+      </div>
+    </div>
+  </div>
+</div>
