@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Samm@b0y",
+    "password": "koropi",
     "database": "blood_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
