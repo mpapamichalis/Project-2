@@ -7,12 +7,14 @@ const db = require("../models");
 
 module.exports = function(app) {
   app.get("/", (req, res) => {
+    console.log (req.user);
     // If the user already has an account send them to the members page
+    console.log("test");
     if (req.user) {
       res.redirect("/members");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
-  });
+
 
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page
@@ -25,9 +27,10 @@ module.exports = function(app) {
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, (req, res) => {
+
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
-  app.get("/donors", (req, res) => {
+  app.get("/donors", isAuthenticated, (req, res) => {
     db.Donor.findAll({raw: true}).then(data =>{
       console.log(data);
       res.render("donor",{
@@ -35,7 +38,7 @@ module.exports = function(app) {
       });
     });
   });
-  app.get("/patients", (req, res) => {
+  app.get("/patients", isAuthenticated, (req, res) => {
     db.Patient.findAll({raw: true}).then(data =>{
       console.log(data);
       res.render("patient",{
@@ -43,7 +46,12 @@ module.exports = function(app) {
       });
     });
   });
-  // app.get("/blood", (req, res) => {
-  
-  // });
+  app.get("/blood", isAuthenticated, (req, res) => {
+    db.Blood.findAll({raw: true}).then(data =>{
+      console.log(data);
+      res.render("blood",{
+
+      });
+    }); 
+  });
 };
