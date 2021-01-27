@@ -1,4 +1,4 @@
-## BLOODLINES    
+# BLOODLINES    
 
 Our App allows users to register and log in as a local bloodbank to add new donors and patients to their database. Tables are created to store patient and donor credentials. All names are kept confidential in accordance to HIPAA. 
 
@@ -15,14 +15,12 @@ Our App allows users to register and log in as a local bloodbank to add new dono
 
 ## Contributors
 ![Screenshot](/images/image1.png)
-* seth-staggs / back end
-* pheno-cat / front end
-* mpapamichalis / project manager
+* Project Manager: [mpapamichalis](https://github.com/mpapamichalis)
+* Back End: [seth-staggs](https://github.com/Seth-Staggs)
+* Front End: [pheno-cat](https://github.com/pheno-cat)
 
-
-**Project Link:** 
-* https://github.com/mpapamichalis/Project-2
-* https://mpapamichalis.github.io/Project-2/
+**Project Link:**
+[click here](https://github.com/mpapamichalis/Project-2) 
 
 ## License
 *Team #Blue* © 2021
