@@ -36,11 +36,12 @@
       <div class="modal-body">
         <form>
             <div class="form-group">
-                <label for="donorName" class="col-form-label">Donor Name</label>
+                <label for="donorName" class="modal-text">Donor Name</label>
                 <input type="text" class="form-control" id="donNameInput">
             </div>
+            <br>
             <div class="form-group">
-                <label for="donbloodType">BloodType</label>
+                <label for="donbloodType" class="modal-text">BloodType</label>
                 <select class="form-control" id="donBtInput">
                     <option>O -</option>
                     <option>O +</option>
@@ -55,8 +56,8 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="newDonorbtn">Add Donor</button>
+        <button type="button" class="btn btn-secondary" id="close-m" data-dismiss="modal">Close</button>
+        <button type="submit" class="sub-btn-m" id="newDonorbtn">Add Donor</button>
       </div>
     </div>
   </div>

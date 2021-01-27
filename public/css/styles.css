@@ -93,6 +93,27 @@ main {
   color: #FF2A5B
 }
 
+.sub-btn-m  {
+  background-color: #FF2A5B;
+  color: white;
+  transition: all 200ms ease-in-out;
+  border: 1px solid  #BE1349;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-family: 'Unica One', cursive;
+}
+
+.sub-btn-m:hover {
+  background-color: white;
+  color: #FF2A5B
+}
+
+
+
+
+
 .mb-4 {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0,0,0, .3);
@@ -309,7 +330,7 @@ td {
   font-family: 'Unica One', cursive;
   padding: 5px 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   display: block;
   margin: 0 auto;
   font-size: 30px;
@@ -363,6 +384,15 @@ td {
   background-color: #FF2A5B;
 
 }
+.modal-title {
+  font-family: 'Unica One', cursive;
+  font-size: 30px;
+}
+
+.modal-text {
+  font-family: 'Unica One', cursive;
+  font-size: 20px;
+}
 
 
 
@@ -371,6 +401,24 @@ td {
   height: 30px;
   width: 30px;
   margin:0 auto;
+
+}
+
+
+#close-m {
+  transition: all 200ms ease-in-out;
+  font-family: 'Unica One', cursive;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 5px 5px 5px rgba(0,0,0, .3);
+  transition: all 200ms ease-in-out;
+}
+
+#close-m:hover {
+  color: #5B6369;
+  background-color: white;
 
 }
 
