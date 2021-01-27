@@ -1,32 +1,63 @@
-
 <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Blood Type</th>
-                    <th scope="col">Can Donate</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{#each donors}}
-                {{#if this.canDonate}}
-                <tr>
-                    <th scope="row">{{this.id}}</th>
-                        <td>{{this.donorName}}</td>
-                        <td>{{this.bloodType}}</td>
-                        <td>Yes</td>
-                </tr>
-                {{/if}}
-                {{/each}}
-          
-              
-            </tbody>
-        </table>
-
-        <button class="btn-add-donor" id="adddonor-btn" type="submit"><strong>+</strong></button>
-
-{{!-- navigation buttons --}}
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Blood Type</th>
+            <th scope="col">Can Donate</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each donors}}
         
-   
-        
+        <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.donorName}}</td>
+            <td>{{this.bloodType}}</td>
+            <td>Yes</td>
+        </tr>
+       
+        {{/each}}
+
+
+    </tbody>
+</table>
+
+<button class="btn-add-donor" id="adddonor-btn" data-toggle="modal" data-target="#newDonor"
+    type="submit"><strong>+</strong></button>
+
+{{!-- modal --}}
+<div class="modal fade" id="newDonor" tabindex="-1" role="dialog" aria-labelledby="donorModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="donorModalCenterTitle">New Donor</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="donorName" class="col-form-label">Donor Name</label>
+                <input type="text" class="form-control" id="donNameInput">
+            </div>
+            <div class="form-group">
+                <label for="donbloodType">BloodType</label>
+                <select class="form-control" id="donBtInput">
+                    <option>O -</option>
+                    <option>O +</option>
+                    <option>A -</option>
+                    <option>A +</option>
+                    <option>B -</option>
+                    <option>B +</option>
+                    <option>AB -</option>
+                    <option>AB +</option>
+                </select>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="newDonorbtn">Add Donor</button>
+      </div>
+    </div>
+  </div>
+</div>

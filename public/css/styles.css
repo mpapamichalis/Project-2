@@ -86,8 +86,6 @@ main {
   font-size: 25px;
   padding: 10px 100px;
   border-radius: 10px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .sub-btn:hover {
@@ -103,7 +101,6 @@ main {
 
 .mt-5 {
   font-family: 'Roboto', sans-serif;
-  text-align: center;
 }
 
 .h3  {
