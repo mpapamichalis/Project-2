@@ -1,6 +1,6 @@
 /* eslint-disable prefer-arrow-callback */
 const newPat = document.getElementById("patadd-btn");
-const newDon = document.getElementById("adddonor-btn");
+// const newDon = document.getElementById("adddonor-btn");
 
 newPat.addEventListener("click", function() {
   console.log("new Patient added");
