@@ -1,23 +1,20 @@
 /* eslint-disable prefer-arrow-callback */
-
-const newPat = document.getElementById("newPatientBtn");
-// const newDon = document.getElementById("adddonor-btn");
-
-newPat.addEventListener("click", function(event) {
-  console.log("new Patient added");
+$("#newPatientbtn").on("click", (event) => {
   event.preventDefault();
-  $.ajax({url: "/api/newPatient", method: "POST", data: {patientName: "Tyler", bloodType: "AB", patientCon: "NA"}}).then(function() {
+  console.log("new Patient added");
+  const patNameInput = $("input#patientNameInput");
+  const patBtInput = $("select#patBtInput");
+  const patConInput = $("input#patientConInput");
+  $.ajax({ url: "/api/newPatient", method: "POST", data: { patientName: patNameInput.val().trim(), bloodType: patBtInput.val().trim(), patientCon: patConInput.val().trim() } }).then(function () {
     window.reload();
   });
-
-}); 
-
-// $("#adddonor-btn").on("click", function(event) {
-//   event.preventDefault();
-//   console.log("new Donor added");
-    
-//   $.ajax({url: "/api/newDonor", method: "POST", data: {donorName: "Steven Douglas", bloodType: "O-", canDonate: true}}).then(function() {
-//     window.reload();
-//   });
-// }); 
-  
+});
+$("#newDonorbtn").on("click", (event) => {
+  event.preventDefault();
+  console.log("new Donor added");
+  const donNameInput = $("#donNameInput");
+  const donBtInput = $("#donBtInput");
+  $.ajax({ url: "/api/newDonor", method: "POST", data: { donorName: donNameInput.val().trim(), bloodType: donBtInput.val().trim(), canDonate: true}}).then(function() {
+    window.reload();
+  });
+});
