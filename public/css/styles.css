@@ -441,6 +441,7 @@ td {
 #close-m:hover {
   color: #5B6369;
   background-color: white;
+  border: 1px solid #5B6369;
 
 }
 
