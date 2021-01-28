@@ -4,9 +4,10 @@ Our App allows users to register and log in as a local bloodbank to add new dono
 
 <br>
 
-![Screenshot](/images/login.png)
-![Screenshot](/images/home.png)
-![Screenshot](/images/donors.png)
+<img width="1787" alt="Screen Shot 2021-01-27 at 9 29 57 PM" src="https://user-images.githubusercontent.com/67757549/106085969-d0fe3f80-60e6-11eb-85b7-9b119045e938.png">
+<img width="1789" alt="Screen Shot 2021-01-27 at 9 31 10 PM" src="https://user-images.githubusercontent.com/67757549/106086050-fc812a00-60e6-11eb-8505-596893dd1af6.png">
+<img width="1786" alt="Screen Shot 2021-01-27 at 9 31 36 PM" src="https://user-images.githubusercontent.com/67757549/106086080-0acf4600-60e7-11eb-9b3a-eef3b034ad48.png">
+<img width="1785" alt="Screen Shot 2021-01-27 at 9 31 55 PM" src="https://user-images.githubusercontent.com/67757549/106086102-16227180-60e7-11eb-8a65-466b1128f0a2.png">
 
 **FUTURE FEATURES:**
  
