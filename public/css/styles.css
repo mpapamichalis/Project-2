@@ -110,6 +110,28 @@ main {
   color: #FF2A5B
 }
 
+.signin-link {
+  color: #FF2A5B;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.signin-link:hover {
+  border-top: 1px solid #FF5F1B;
+  color: #FF5F1B;
+}
+
+.login-link {
+  color: #FF2A5B;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.login-link:hover {
+  border-top: 1px solid #FF5F1B;
+  color: #FF5F1B;
+}
+
 
 
 
@@ -419,6 +441,7 @@ td {
 #close-m:hover {
   color: #5B6369;
   background-color: white;
+  border: 1px solid #5B6369;
 
 }
 
