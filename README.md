@@ -12,7 +12,7 @@ Our App allows users to register and log in as a local bloodbank to add new dono
  * Users will be able to see when donors are eligible to donate again and request donor to donate if blood type supply is low.
  * Users will be able to see when patients last received a blood transfusion and from which donor they received it from. 
 
-
+<br>
 ## Contributors
 ![Screenshot](/images/image1.png)
 * Project Manager: [mpapamichalis](https://github.com/mpapamichalis)
@@ -22,5 +22,6 @@ Our App allows users to register and log in as a local bloodbank to add new dono
 **Project Link:**
 [click here](https://github.com/mpapamichalis/Project-2) 
 
+<br>
 ## License
 *Team #Blue* © 2021
